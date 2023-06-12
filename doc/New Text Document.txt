@@ -1,0 +1,15 @@
+purlin doc/purlin.pdf
+girt doc/girt.pdf
+sag rods doc/404
+bracingR doc/Rbrc.pdf
+bracingS Sbrc.pdf
+rafter doc/Mbeam.pdf
+columnP doc/Mcol.pdf
+columnS doc/Scol.pdf
+Column-Rafter doc/conCR.pdf
+Rafter-Rafter doc/conRR.pdf
+Bracing doc/conCV.pdf
+Column-BaseP doc/conCB.pdf
+Column-BaseS doc/conCBS.pdf
+Main Foundation doc/Mfoun.pdf
+secondry Foundation doc/Sfoun.pdf
