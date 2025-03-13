@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>PFE | Abdelkarim Khelfaoui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/ukmo.png">
     <style media="screen">
       body {
@@ -47,6 +48,9 @@
       .row{
         width: 90%;display: block;justify-content: center;margin: 0;
       }
+      .erow{
+        width: 50%;display: block;justify-content: center;margin: 0;
+      }
       .row input{
         margin: 10px; border-radius: 10px;border: 1px solid rgb(100, 255, 100);width: auto;
         background: #153476;color: rgb(100, 255, 100);padding: 10px 20px;
@@ -55,8 +59,37 @@
       .row input:hover {
         border: 1px solid #153476;background: rgb(100, 255, 100);color: #153476;
       }
+      .erow input{
+        margin: 10px; border-radius: 10px;border: 1px solid rgb(100, 255, 100);width: auto;
+        background: #153476;color: rgb(100, 255, 100);padding: 10px 20px;
+        transition: 0.3s;cursor: pointer;
+      }
+      .erow input:hover {
+        border: 1px solid #153476;background: rgb(100, 255, 100);color: #153476;
+      }
       .rowx{
         width: 100%;display: flex;justify-content: center;margin: 0;
+      }
+      @media screen and (max-width: 670px) {
+        .row input{
+          margin: 10px; border-radius: 10px;border: 1px solid rgb(100, 255, 100);width: auto;
+          background: #153476;color: rgb(100, 255, 100);padding: 10px 20px;
+          transition: 0.3s;cursor: pointer;
+        }
+        .row input:hover {
+          border: 1px solid #153476;background: rgb(100, 255, 100);color: #153476;
+        }
+        .erow input{
+          margin: 10px; border-radius: 10px;border: 1px solid rgb(100, 255, 100);width: auto;
+          background: #153476;color: rgb(100, 255, 100);padding: 10px 20px;
+          transition: 0.3s;cursor: pointer;
+        }
+        .erow input:hover {
+          border: 1px solid #153476;background: rgb(100, 255, 100);color: #153476;
+        }
+        .erow{
+          width: 70%;display: block;justify-content: center;margin: 0;
+        }
       }
     </style>
   </head>
@@ -203,6 +236,38 @@
             <input type="button" onclick="openviewer(1, 21)" value="Drawing - 6">
           </div>
         </div>
+        <div class="hldr">
+          <div class="row">
+            <p style="font-size:32px;"><b>Masterials</b></p>
+          </div>
+        </div>
+        <div class="hldr">
+          <div class="row">
+            <input type="button" onclick="openviewer(1, 22)" value="Masterial">
+          </div>
+        </div>
+        <div class="hldr">
+          <div class="row">
+            <p style="font-size:32px;"><b>References</b></p>
+          </div>
+        </div>
+        <div class="hldr">
+          <div class="erow">
+            <input style="width: 50%;" type="button" onclick="openviewer(1, 23)" value="EuroCode3">
+          </div>
+          <div class="erow">
+            <input style="width: 50%;" type="button" onclick="openviewer(1, 24)" value="DTR">
+          </div>
+          <div class="erow">
+            <input style="width: 50%;" type="button" onclick="openviewer(1, 25)" value="CCM97">
+          </div>
+          <div class="erow">
+            <input style="width: 50%;" type="button" onclick="openviewer(1, 26)" value="RNVA2013">
+          </div>
+          <div class="row">
+            <p>MEMOIRE: "ETUDE D’UN HANGAR EN CHARPENTE METALLIQUE A USAGE DE STOCKAGE" de Tayebi Antar et Sehila Abdelhak</p>
+          </div>
+        </div>
         <!--
         <div class="hldr"><!-copythis->
           <div class="row">
@@ -224,7 +289,8 @@
       "doc/Mbeam.pdf", "doc/Mcol.pdf", "doc/Scol.pdf", "doc/conCR.pdf", "doc/conRR.pdf",
       "doc/conCV.pdf", "doc/conCB.pdf", "doc/conCBS.pdf", "doc/Mfoun.pdf", "doc/Sfoun.pdf",
       "doc/Drawing3-Model.pdf", "doc/Drawing3-Model1.pdf", "doc/Drawing3-Model2.pdf",
-      "doc/Drawing3-Model3.pdf", "doc/Drawing3-Model4.pdf", "doc/Drawing3-Model5.pdf"];
+      "doc/Drawing3-Model3.pdf", "doc/Drawing3-Model4.pdf", "doc/Drawing3-Model5.pdf", "doc/Masteriels.pdf",
+      "doc/eurocode.pdf", "doc/DTR.pdf", "doc/CMM.pdf", "doc/RNV.pdf"];
       var var1 = [handcal, robcal];var serc;
       serc = var1[oper][dpre];
       document.getElementById('emdpdf').setAttribute("src", serc);
